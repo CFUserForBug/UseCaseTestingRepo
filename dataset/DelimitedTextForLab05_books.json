@@ -1,0 +1,78 @@
+{
+	"name": "DelimitedTextForLab05_books",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorageLab05",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "books.csv",
+				"folderPath": "originals",
+				"container": "module5"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Book_Id",
+				"type": "String"
+			},
+			{
+				"name": "ISBN",
+				"type": "String"
+			},
+			{
+				"name": "ISBN13",
+				"type": "String"
+			},
+			{
+				"name": "Title",
+				"type": "String"
+			},
+			{
+				"name": "Author",
+				"type": "String"
+			},
+			{
+				"name": "Author_l-f",
+				"type": "String"
+			},
+			{
+				"name": "Additional_Authors",
+				"type": "String"
+			},
+			{
+				"name": "Average_Rating",
+				"type": "String"
+			},
+			{
+				"name": "Publisher",
+				"type": "String"
+			},
+			{
+				"name": "Binding",
+				"type": "String"
+			},
+			{
+				"name": "Number_of_Pages",
+				"type": "String"
+			},
+			{
+				"name": "Year_Published",
+				"type": "String"
+			},
+			{
+				"name": "Original_Publication_Year",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

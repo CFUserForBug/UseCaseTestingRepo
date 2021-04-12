@@ -1,0 +1,72 @@
+{
+	"name": "ReadersBooksOuterJoin",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorageLab05",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "module5"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Book_Id",
+				"type": "String"
+			},
+			{
+				"name": "ISBN",
+				"type": "String"
+			},
+			{
+				"name": "ISBN13",
+				"type": "String"
+			},
+			{
+				"name": "My_Rating",
+				"type": "String"
+			},
+			{
+				"name": "Date_Read",
+				"type": "String"
+			},
+			{
+				"name": "Date_Added",
+				"type": "String"
+			},
+			{
+				"name": "Bookshelves",
+				"type": "String"
+			},
+			{
+				"name": "Exclusive_Shelf",
+				"type": "String"
+			},
+			{
+				"name": "My_Review",
+				"type": "String"
+			},
+			{
+				"name": "Spoiler",
+				"type": "String"
+			},
+			{
+				"name": "Read_Count",
+				"type": "String"
+			},
+			{
+				"name": "Original_Purchase_Date",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
