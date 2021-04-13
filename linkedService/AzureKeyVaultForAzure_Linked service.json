@@ -1,0 +1,11 @@
+{
+	"name": "AzureKeyVaultForAzure_Linked service",
+	"properties": {
+		"description": "This is for Azure KeyVolt testing ",
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://Adf-KeyVolt.vault.azure.net/"
+		}
+	}
+}
